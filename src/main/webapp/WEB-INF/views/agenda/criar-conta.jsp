@@ -6,6 +6,16 @@
 <title>Agenda de contatos - Criar conta</title>
 <meta name="viewport" content="width=device-width" />
 
+<%
+         response.setHeader("Cache-Control","no-cache, no-store, must-revalidate"); 
+         response.setHeader("Pragma", "no-cache"); 
+         response.setDateHeader("Expires", 0);
+%> 
+
+
+
+
+
 <!-- folha de estilos CSS do bootstrap -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -25,17 +35,31 @@
 					<div class="card-body">
 						<div class="text-center">Entre com seus dados para criar uma conta:</div>
 						<hr />
-						<form>
+						
+						<div class="text-center text-success">
+						<h4>${mensagem_sucesso}</h4>
+						</div>
+						
+						<div class="text-center text-danger">
+						<h4>${mensagem_erro} </h4>
+						</div>
+						
+						<form method="post" action="/sistema_contatos/cadastrar-usuario">
+							
+							
 							<div class="form-group mb-2">
-								<label>Nome do usuário:</label> <input type="text"
+								<label>Nome do usuário:</label> <input type="text" name="nome_usuario" required="required"  pattern="[A-Za-zÀ-Üà- ü\s]{8,150}"   title="Digite apenas letras  e espaços. O texto deve ter entre 8 e 150 caracteres." 
 									class="form-control" id="nome" placeholder="Digite seu nome">
 							</div>
 							<div class="form-group mb-2">
-								<label>Email:</label> <input type="email" class="form-control"
+								<label>Email:</label> <input type="email" name="email_usuario" required="required"
+								class="form-control"
 									id="email" placeholder="Digite seu email">
 							</div>
 							<div class="form-group mb-2">
-								<label>Senha:</label> <input type="password"
+								<label>Senha:</label> <input type="password" name="senha_usuario"  required="required"
+								pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" 
+								title="A senha deve ter pelo  menos 8 caracteres, incluindo pelo menos uma letra minúscula, uma letra maiúscula, um número e um caractere especial (!@#$%^&*)." 
 									class="form-control" id="senha"
 									placeholder="Digite sua senha">
 							</div>

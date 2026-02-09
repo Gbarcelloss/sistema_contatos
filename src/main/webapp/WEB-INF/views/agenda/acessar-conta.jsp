@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Agenda de contatos - Acessar conta</title>
 
+  <%
+         response.setHeader("Cache-Control","no-cache, no-store, must-revalidate"); 
+         response.setHeader("Pragma", "no-cache"); 
+         response.setDateHeader("Expires", 0);
+%> 
+  
+  
+  
   <link 
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
   rel="stylesheet">
@@ -21,16 +29,22 @@
           <div class="card-body">
             <div class="text-center">Entre com suas credenciais de acesso:</div>
             <hr/>
+            
+            <div class="text-center text-danger">
+            <h4>${mensagem_erro} </h4>
+            
+            
+            </div>
 
-            <form method="post" action="${pageContext.request.contextPath}/login">
+            <form method="post" action="autenticar-usuario">
               <div class="mb-2">
                 <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
+                <input type="email" class="form-control" id="email" name="email_usuario" placeholder="Digite seu email"  required="required">
               </div>
 
               <div class="mb-2">
                 <label for="senha" class="form-label">Senha:</label>
-                <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
+                <input type="password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" title="A senha deve ter pelo menos 8 carácteres, incluindo pelo menos uma letra minúscula, uma letra maiúscula id="senha" name="senha_usuario" placeholder="Digite sua senha" required="required">
               </div>
 
               <div class="mb-2 text-end">

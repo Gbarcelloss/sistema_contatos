@@ -4,12 +4,22 @@
 <title>Agenda de contatos - Recuperar Senha</title>
 <meta name="viewport" content="width=device-width" />
 
+<%
+         response.setHeader("Cache-Control","no-cache, no-store, must-revalidate"); 
+         response.setHeader("Pragma", "no-cache"); 
+         response.setDateHeader("Expires", 0);
+%> 
+
+
 <!-- folha de estilos CSS do bootstrap -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
 	rel="stylesheet">
 
 </head>
+
+
+
 
 <body>
 
@@ -25,11 +35,20 @@
 						<div class="text-center">Entre com seu email para recuperar sua senha:</div>
 						<hr />
 
-						<form>
+						  <div class="text-success">
+                           <h4>${mensagem_sucesso}</h4>
+
+                          </div>
+
+                          <div class="text-danger">
+                          <h4>${mensagem_erro}</h4>     
+                          </div>
+						
+						<form method="post"  action="recuperar-senha-usuario">
 
 							<div class="form-group mb-2">
-								<label>Email:</label> <input type="email" class="form-control"
-									id="email" placeholder="Digite seu email">
+								<label>Email:</label> <input type="email" class="form-control" id="email"
+									name="email" placeholder="Digite seu email">
 							</div>
 
 							<div class="d-grid mb-2">
