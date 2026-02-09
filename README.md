@@ -3,7 +3,7 @@ Projeto em constante revisão, refatoração e aprimoramento com base nos meus e
 
 Estou cursando o 3º semestre de Análise e Desenvolvimento de Sistemas (1 ano e meio de curso). Decidi retomar esse projeto antigo como forma de praticar Java, reforçar meus conhecimentos em Spring MVC e também montar um portfólio com os projetos que estou refazendo.
 
-Sobre o sistema
+
 O sistema permite que o usuário crie uma conta, faça login e gerencie contatos (cadastrar, consultar, editar e excluir).
 
 Também tem um recurso de recuperação de senha via e-mail. Caso o usuário esqueça a senha, ele recebe uma senha aleatória no e-mail e depois pode trocar por uma nova na área "minha conta".
