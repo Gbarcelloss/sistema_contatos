@@ -4,6 +4,14 @@ Aplicação web de gerenciamento de contatos desenvolvida com Java e Spring MVC.
 
 O sistema permite o cadastro de usuários, autenticação e gerenciamento completo de contatos.
 
+---
+
+## Página inicial
+
+![Página inicial](images/Página inicial.png)
+
+---
+
 ## Funcionalidades
 
 - Cadastro de usuários
@@ -13,6 +21,32 @@ O sistema permite o cadastro de usuários, autenticação e gerenciamento comple
 - CRUD de contatos
 - Proteção de rotas (acesso apenas autenticado)
 - Logout
+
+---
+
+## Login de usuário
+
+![Login de usuário](images/Login de usuário.png)
+
+---
+
+## Consulta de contatos
+
+![Consulta de contatos](images/Consulta de contatos.png)
+
+---
+
+## Minha conta de usuário
+
+![Minha conta de usuário](images/Minha conta de usuário.png)
+
+---
+
+## Recuperação de senha por email
+
+![Recuperação de senha por email](images/Recuperação de senha por email.png)
+
+---
 
 ## Tecnologias utilizadas
 
@@ -27,13 +61,18 @@ O sistema permite o cadastro de usuários, autenticação e gerenciamento comple
 - JavaMail
 - Lombok
 
+---
+
 ## Recuperação de senha
 
 A funcionalidade de envio de e-mail foi implementada utilizando o Mailtrap (ambiente sandbox) para testes.
 
 Em ambiente de produção, o SMTP pode ser configurado para serviços como Gmail ou Outlook.
 
+---
+
 ## Como executar o projeto
 
 ```bash
 git clone https://github.com/Gbarcelloss/sistema_contatos.git
+```
