@@ -7,7 +7,7 @@ O sistema permite o cadastro de usuários, autenticação e gerenciamento comple
 ---
 
 ## Página inicial
-![Página inicial](images/pagina-inicial.png)
+![Página inicial](images/Pagina-inicial.png)
 
 ---
 
@@ -24,22 +24,22 @@ O sistema permite o cadastro de usuários, autenticação e gerenciamento comple
 ---
 
 ## Login de usuário
-![Login de usuário](images/login-usuario.png)
+![Login de usuário](images/Login-usuario.png)
 
 ---
 
 ## Consulta de contatos
-![Consulta de contatos](images/consulta-contatos.png)
+![Consulta de contatos](images/Consulta-contatos.png)
 
 ---
 
 ## Minha conta de usuário
-![Minha conta de usuário](images/minha-conta.png)
+![Minha conta de usuário](images/Minha-conta.png)
 
 ---
 
 ## Recuperação de senha por email
-![Recuperação de senha por email](images/recuperacao-senha.png)
+![Recuperação de senha por email](images/Recuperacao-senha.png)
 
 ---
 
